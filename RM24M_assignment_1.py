@@ -39,7 +39,7 @@ def question2() -> dict:
     answers["q2_2"] = ["continuous", "ratio", "quantitative"]
     answers["q2_3"] = ["continuous", "interval", "quantitative"]
     answers["q2_4"] = ["discrete", "ordinal", "qualitative"]
-    answers["q2_5"] = ["discrete", "nominal", "qualitative"] 
+    answers["q2_5"] = ["discrete", "nominal", "qualitative"]
 
     return answers
 
@@ -78,14 +78,14 @@ def question4() -> dict:
 
     # The answer to each subquestion is a list of two strings.
     # The strings are each taken from among: ["nominal", "ratio", "ordinal", or "interval"]
-    answers["q4_1"] = ["nominal", "nominal"]  
-    answers["q4_2"] = ["ratio", "ordinal"]   
-    answers["q4_3"] = ["ratio", "ordinal"]   
-    answers["q4_4"] = ["ratio", "ordinal"]   
-    answers["q4_5"] = ["ratio", "ratio"]    
-    answers["q4_6"] = ["ratio", "ordinal"]   
-    answers["q4_7"] = ["ratio", "ratio"]     
-    answers["q4_8"] = ["ratio", "interval"] 
+    answers["q4_1"] = ["nominal", "nominal"]
+    answers["q4_2"] = ["ratio", "ordinal"]
+    answers["q4_3"] = ["ratio", "ordinal"]
+    answers["q4_4"] = ["ratio", "ordinal"]
+    answers["q4_5"] = ["ratio", "ratio"]
+    answers["q4_6"] = ["ratio", "ordinal"]
+    answers["q4_7"] = ["ratio", "ratio"]
+    answers["q4_8"] = ["ratio", "interval"]
 
     return answers
 
