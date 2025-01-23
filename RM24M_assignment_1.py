@@ -187,7 +187,7 @@ def question7() -> dict:
 
     # q7_3: Bin values for NumberOfVisits (Poisson distribution with mean = 4)
     # Based on Poisson cumulative probabilities, split into 4 equal frequency bins:
-    answers["q7_3"] = [(0, 2), (2, 4), (4, 6), (6, ∞)]
+    answers["q7_3"] = [(0, 2), (2, 4), (4, 6), (6, 100)]
 
 
     return answers
