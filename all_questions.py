@@ -53,32 +53,32 @@ def question1():
     # Choosing the root node with the highest information gain
     level1["smoking"] = "Decision Node"
     level1["smoking_info_gain"] = 0.28
-    level1["weight_loss"] = -1
-    level1["weight_loss_info_gain"] = -1
-    level1["radon"] = -1
-    level1["radon_info_gain"] = -1
-    level1["cough"] = -1
-    level1["cough_info_gain"] = -1
+    level1["weight_loss"] = -1.0
+    level1["weight_loss_info_gain"] = -1.0
+    level1["radon"] = -1.0
+    level1["radon_info_gain"] = -1.0
+    level1["cough"] = -1.0
+    level1["cough_info_gain"] = -1.0
 
     # Left branch (Smoking = Yes) - Best attribute next
-    level2_left["smoking"]= -1
-    level2_left["smoking_info_gain"] = -1
+    level2_left["smoking"]= -1.0
+    level2_left["smoking_info_gain"] = -1.0
     level2_left["weight_loss"] = "Left Node"
     level2_left["weight_loss_info_gain"] = 0.13
-    level2_left["radon"] = -1
-    level2_left["radon_info_gain"] = -1
-    level2_left["cough"] = -1
-    level2_left["cough_info_gain"] = -1
+    level2_left["radon"] = -1.0
+    level2_left["radon_info_gain"] = -1.0
+    level2_left["cough"] = -1.0
+    level2_left["cough_info_gain"] = -1.0
     
     # Right branch (Smoking = No) - Best attribute next
-    level2_right["smoking"] = -1
-    level2_right["smoking_info_gain"] = -1
+    level2_right["smoking"] = -1.0
+    level2_right["smoking_info_gain"] = -1.0
     level2_right["cough"] = "Right Node"
     level2_right["cough_info_gain"] = 0.13
-    level2_right["radon"] = -1
-    level2_right["radon_info_gain"] = -1
-    level2_right["weight_loss"] = -1
-    level2_right["weight_loss_info_gain"] = -1
+    level2_right["radon"] = -1.0
+    level2_right["radon_info_gain"] = -1.0
+    level2_right["weight_loss"] = -1.0
+    level2_right["weight_loss_info_gain"] = -1.0
     
     answer["level1"] = level1
     answer["level2_left"] = level2_left
