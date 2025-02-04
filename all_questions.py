@@ -10,6 +10,7 @@ import math
 # Example of how to specify a binary with the structure:
 # See the file INSTRUCTIONS.md
 # ----------------------------------------------------------------------
+
 def entropy(probabilities):
     return -sum(p * math.log2(p) for p in probabilities if p > 0)
 
@@ -29,7 +30,9 @@ def intrinsic_value(subsets):
 def gain_ratio(parent_entropy, subsets):
     iv = intrinsic_value(subsets)
     return information_gain(parent_entropy, subsets) / iv
+
 #-----------------------------------------------------------------------
+
 def question1():
     """
     Note 1: Each attribute can appear as a node in the tree AT MOST once.
@@ -50,8 +53,16 @@ def question1():
     # Choosing the root node with the highest information gain
     level1["smoking"] = "Decision Node"
     level1["smoking_info_gain"] = 0.28
+    level1["weight_loss"] = -1
+    level1["weight_loss_info_gain"] = -1
+    level1["radon"] = -1
+    level1["radon_info_gain"] = -1
+    level1["cough"] = -1
+    level1["cough_info_gain"] = -1
 
     # Left branch (Smoking = Yes) - Best attribute next
+    level2_left["smoking"]= -1
+    level2_left["smoking_info_gain"] = -1
     level2_left["weight_loss"] = "Left Node"
     level2_left["weight_loss_info_gain"] = 0.13
     level2_left["radon"] = -1
@@ -60,6 +71,8 @@ def question1():
     level2_left["cough_info_gain"] = -1
     
     # Right branch (Smoking = No) - Best attribute next
+    level2_right["smoking"] = -1
+    level2_right["smoking_info_gain"] = -1
     level2_right["cough"] = "Right Node"
     level2_right["cough_info_gain"] = 0.13
     level2_right["radon"] = -1
@@ -132,6 +145,8 @@ def question3():
 
     # Compute Gini index for the overall dataset
     answer["(a) Gini, overall"] = gini(probabilities)
+
+    answer["(b) Gini, ID"] = 0.0
 
     # Compute Gini index for Gender
     answer["(c) Gini, Gender"] = 0.4545454545454546
